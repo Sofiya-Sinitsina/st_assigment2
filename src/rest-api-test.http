@@ -1,70 +1,70 @@
 #Students CRUD
 ###
-GET http://localhost:3000/api/students
+GET {{baseUrl}}/api/students
 
 ###
-GET http://localhost:3000/api/students/1
+GET {{baseUrl}}/api/students/2
 
 ###
-POST http://localhost:3000/api/students
+POST {{baseUrl}}/api/students
 Content-Type: application/json
 
 {"name": "test3", "email": "testemail3@gmail.com"}
 
 ###
-PUT http://localhost:3000/api/students/1
+PUT {{baseUrl}}/api/students/1
 Content-Type: application/json
 
 {"name": "testPut", "email": "testPut@gmail.com"}
 
 ###
-PATCH http://localhost:3000/api/students/1
+PATCH {{baseUrl}}/api/students/1
 Content-Type: application/json
 
 {"name": "testPatch"}
 
 ###
-PATCH http://localhost:3000/api/students/1
+PATCH {{baseUrl}}/api/students/1
 Content-Type: application/json
 
 {"email": "testPatch@gmail.com"}
 
 ###
-DELETE http://localhost:3000/api/students/1
+DELETE {{baseUrl}}/api/students/1
 
 
 
 #Course CRUD
 ###
-GET http://localhost:3000/api/courses
+GET {{baseUrl}}/api/courses
 
 ###
-GET http://localhost:3000/api/courses/1
+GET {{baseUrl}}/api/courses/1
 
 ###
-POST http://localhost:3000/api/courses
+POST {{baseUrl}}/api/courses
 Content-Type: application/json
 
 {"course_name": "test4", "instructor": "testInstructor2", "credit_hours": 4}
 
 ###
-PUT http://localhost:3000/api/courses/1
+PUT {{baseUrl}}/api/courses/1
 Content-Type: application/json
 
 {"course_name": "testPut", "instructor": "testInstructorPut", "credit_hours": 4}
 
 ###
-PATCH http://localhost:3000/api/courses/2
+PATCH {{baseUrl}}/api/courses/2
 Content-Type: application/json
 
 {"course_name": "test1"}
 
 ###
-DELETE http://localhost:3000/api/courses/1
+DELETE {{baseUrl}}/api/courses/1
 
 #Enrollments
 ###
-POST http://localhost:3000/api/enrollments
+POST {{baseUrl}}/api/enrollments
 Content-Type: application/json
 
 {
@@ -78,10 +78,10 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/api/enrollments
+GET {{baseUrl}}/api/enrollments
 
 ###
-GET http://localhost:3000/api/enrollments?student_id=2&course_id=2
+GET {{baseUrl}}/api/enrollments?student_id=2&course_id=2
 
 ###
-GET http://localhost:3000/api/enrollments/2/3
+GET {{baseUrl}}/api/enrollments/2/3
