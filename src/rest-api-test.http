@@ -1,0 +1,87 @@
+#Students CRUD
+###
+GET http://localhost:3000/api/students
+
+###
+GET http://localhost:3000/api/students/1
+
+###
+POST http://localhost:3000/api/students
+Content-Type: application/json
+
+{"name": "test3", "email": "testemail3@gmail.com"}
+
+###
+PUT http://localhost:3000/api/students/1
+Content-Type: application/json
+
+{"name": "testPut", "email": "testPut@gmail.com"}
+
+###
+PATCH http://localhost:3000/api/students/1
+Content-Type: application/json
+
+{"name": "testPatch"}
+
+###
+PATCH http://localhost:3000/api/students/1
+Content-Type: application/json
+
+{"email": "testPatch@gmail.com"}
+
+###
+DELETE http://localhost:3000/api/students/1
+
+
+
+#Course CRUD
+###
+GET http://localhost:3000/api/courses
+
+###
+GET http://localhost:3000/api/courses/1
+
+###
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{"course_name": "test4", "instructor": "testInstructor2", "credit_hours": 4}
+
+###
+PUT http://localhost:3000/api/courses/1
+Content-Type: application/json
+
+{"course_name": "testPut", "instructor": "testInstructorPut", "credit_hours": 4}
+
+###
+PATCH http://localhost:3000/api/courses/2
+Content-Type: application/json
+
+{"course_name": "test1"}
+
+###
+DELETE http://localhost:3000/api/courses/1
+
+#Enrollments
+###
+POST http://localhost:3000/api/enrollments
+Content-Type: application/json
+
+{
+  "student_id": 2,
+  "course_id": 3,
+  "assignment1": 85.5,
+  "assignment2": 90,
+  "midterm_exam": 78,
+  "final_exam": 88,
+  "final_project": 92
+}
+
+###
+GET http://localhost:3000/api/enrollments
+
+###
+GET http://localhost:3000/api/enrollments?student_id=2&course_id=2
+
+###
+GET http://localhost:3000/api/enrollments/2/3
